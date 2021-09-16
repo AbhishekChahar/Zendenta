@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "" });
+  res.json({ message: "Zendenta Clinic" });
 });
 
 // set port, listen for requests
