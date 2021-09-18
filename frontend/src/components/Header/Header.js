@@ -1,12 +1,9 @@
 import React from 'react'
+import './../../app.scss';
 
 const Header = () => {
     return (
-        <div style={{
-            backgroundColor: 'blue',
-            flex: '0.8',
-            height: '10vh'
-        }}>
+        <div className = "header">
             I am Header
         </div>
     )

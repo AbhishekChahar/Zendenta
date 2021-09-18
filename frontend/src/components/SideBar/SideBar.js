@@ -1,12 +1,8 @@
 import React from 'react'
-
+import './../../app.scss';
 const SideBar = () => {
     return (
-        <div style={{
-            backgroundColor: 'grey',
-            flex: '0.2',
-            height: "100vh"
-        }}>
+        <div className = "sidebar">
             I am Side Bar
         </div>
     )
