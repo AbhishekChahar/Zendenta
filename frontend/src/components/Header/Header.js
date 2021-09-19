@@ -1,14 +1,12 @@
 import React from 'react'
+import './_Header.scss'
 
 const Header = () => {
     return (
-        <div style={{
-            backgroundColor: 'blue',
-            flex: '0.8',
-            height: '10vh'
-        }}>
+        <header className='header'>
             I am Header
-        </div>
+
+        </header>
     )
 }
 
