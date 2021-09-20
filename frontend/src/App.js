@@ -7,19 +7,23 @@ import Home from "./screens/Home/Home";
 function App() {
   return (
     <Router>
-      <Route path = "/">
+      <Route exact path = "/">
         <Home/>  
       </Route>
-      
-      <div className="App">
+
+      <Route path = "/layout">
+        <div className="App">
         <SideBar />
         <div className="mainBar">
           <Header />
           <Route path="/overview">
-            <Overview /> 
-          </Route>
+              <Overview /> 
+            </Route>
+          </div>
         </div>
-      </div>
+      </Route>
+      
+      
     </Router>
   );
 }

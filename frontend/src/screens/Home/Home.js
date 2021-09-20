@@ -23,7 +23,7 @@ const Home = () => {
 
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
 
-            <a href="/layout" class="btn btn-primary">Send OTP</a>
+            <Link to="/layout" class="btn btn-primary">Send OTP</Link>
             
           </div>
         </div>
