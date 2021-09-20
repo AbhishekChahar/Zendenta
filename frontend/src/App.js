@@ -3,6 +3,8 @@ import Header from "./components/Header/Header";
 import SideBar from "./components/SideBar/SideBar";
 import Overview from "./screens/Overview/Overview";
 import Home from "./screens/Home/Home";
+import PatientsList from "./components/Patients-List/PatientsList";
+
 
 function App() {
   return (
@@ -16,9 +18,14 @@ function App() {
         <SideBar />
         <div className="mainBar">
           <Header />
-          <Route path="/overview">
+            <Route path="/overview">
               <Overview /> 
             </Route>
+
+            <Route path="/PatientsList">
+              <PatientsList /> 
+            </Route>
+            
           </div>
         </div>
       </Route>

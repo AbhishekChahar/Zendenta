@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import SideBar from "./components/SideBar/SideBar";
 import Overview from "./screens/Overview/Overview";
 import Home from "./screens/Home/Home";
+import PatientsList from './components/Patients-List/PatientsList';
 
 const layout = () => {
     return (
@@ -13,8 +14,12 @@ const layout = () => {
           <SideBar />
           <div className="mainBar">
             <Header />
-            <Route path="/overview">
+            <Route path="/">
               <Overview />
+            </Route>
+
+            <Route path="/PatientList">
+              <PatientsList />
             </Route>
           </div>
         </div>
